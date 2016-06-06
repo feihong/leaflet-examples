@@ -9,10 +9,19 @@ params = {
 }
 L.tileLayer(url, params).addTo(mymap)
 
-L.marker([41.962757, -87.686552]).addTo(mymap)
+marker = L.marker([41.962757, -87.686552]).addTo(mymap)
+marker.bindPopup('This is where you vote')
 
 L.circle([41.964217, -87.686016], 800, {
     color: 'blue'
     fillColor: 'grey'
     fillOpacity: 0.2
 }).addTo(mymap)
+
+circle = L.circleMarker([41.965238, -87.689148], {
+    color: 'red'
+    fillColor: 'red'
+    fillOpacity: 1
+}).addTo(mymap)
+circle.setRadius(5)
+circle.bindPopup('Baker Miller')
