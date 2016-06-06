@@ -8,3 +8,11 @@ params = {
   accessToken: 'pk.eyJ1IjoiZmVpaG9uZyIsImEiOiJjaXAwbnI2dmQwMHloeHVtNXd4Y3V0M3FsIn0.cuYLb1WqhxoqlZWyS48u4g'
 }
 L.tileLayer(url, params).addTo(mymap)
+
+L.marker([41.962757, -87.686552]).addTo(mymap)
+
+L.circle([41.964217, -87.686016], 800, {
+    color: 'blue'
+    fillColor: 'grey'
+    fillOpacity: 0.2
+}).addTo(mymap)
