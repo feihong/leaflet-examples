@@ -1,6 +1,4 @@
-mymap = L.map('map').setView([51.505, -0.09], 13)
-
-# https://a.tiles.mapbox.com/v4/feihong.0abbogke/page.html?access_token=pk.eyJ1IjoiZmVpaG9uZyIsImEiOiJjaXAwbnI2dmQwMHloeHVtNXd4Y3V0M3FsIn0.cuYLb1WqhxoqlZWyS48u4g#6/10.542/-21.698
+mymap = L.map('map').setView([41.964241, -87.686005], 16)
 
 url = 'https://a.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}'
 params = {
